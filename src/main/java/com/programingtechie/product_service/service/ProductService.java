@@ -34,6 +34,7 @@ public class ProductService {
         return products.stream().map(this::mapToProductResponse).toList();
     }
 
+    // Chuyen doi kieu Product sang ProductResponse
     private ProductResponse mapToProductResponse(Product product) {
         return ProductResponse.builder()
                 .id(product.getId())
